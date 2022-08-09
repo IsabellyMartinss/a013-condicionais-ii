@@ -1,15 +1,21 @@
-let nacionalidade = prompt("digite aqui a nacionalidade").toLowerCase();
+let numero = Number(prompt('Digite um número e tente acertar o número surpresa!'));
 
-if(nacionalidade === "brasileira"){
-    console.log("a pessoa é do Brasil!");
-} else if(nacionalidade === "argentina"){
-    console.log("a pessoa é da Argentina!");
-} else if(nacionalidade === "uruguaia"){
-    console.log("a pessoa é do Uruguai!");
-} else if(nacionalidade === "chilena"){
-    console.log("a pessoa é do Chile!");
-} else if(nacionalidade === "colombiana"){
-    console.log("a pessoa é da Colômbia!");
-} else{
-    console.log("nacionalidade não encontrada")
+switch (numero) {
+    case 6:
+        console.log('O número escolhido foi o 6, errou')
+        break;
+    case 12:
+        console.log('O número escolhido foi o 12, errou')
+        break;
+    case 18:
+        console.log('O número escolhido foi o 18, errou')
+        break;
+    case 24:
+        console.log('O número escolhido foi o 24, errou')
+        break;
+    case 30:
+        console.log('O número escolhido foi o 30, acertou!')
+        break;
+    default:
+        console.log('Não foi dessa vez! :(')
 }
